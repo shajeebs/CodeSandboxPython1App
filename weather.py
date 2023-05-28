@@ -32,6 +32,7 @@ def get_weather():
     # Get the city name from the entry box.
     city = city_entry.get()
     
+    # https://api.openweathermap.org/data/2.5/weather?q=london&appid=c291711997e91ed2b8660eee81fe4382
     # Make an API request to get the weather for the city.
     url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=YOUR_API_KEY".format(city)
     response = requests.get(url)
